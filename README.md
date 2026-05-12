@@ -1,4 +1,3 @@
-```bash
 # KiCad Dark Pro Theme
 
 A professional dark gray compact UI theme for KiCad 10 on Linux — cleaner and more compact than Altium Designer's default layout. Includes 16 handcrafted schematic and PCB color themes.
@@ -10,9 +9,11 @@ Built and tested on **Arch Linux + Hyprland (Wayland)** with HyDE/wallbash rice 
 ## Preview
 
 ### PCB Layout — Dark Pro UI
+
 ![PCB Layout](theme_snapshots/pcb_theme.png)
 
 ### Schematic Sheet — Tokyo Night Theme
+
 ![Schematic Tokyo Night](theme_snapshots/tokyo_night_schematic_sheet_theme.png)
 
 ---
@@ -31,48 +32,53 @@ Built and tested on **Arch Linux + Hyprland (Wayland)** with HyDE/wallbash rice 
 
 ## Included Color Themes
 
-| Theme | Style |
-|---|---|
-| `IBrahim's_Theme` | Custom dark — author's personal theme |
-| `tokyo_night` | Dark blue-purple, high contrast |
-| `altium_midnight_blue` | Altium-inspired deep blue |
-| `altium_soft_slate` | Altium-inspired muted slate |
-| `nord_arctic` | Nord palette, cool gray-blue |
-| `gruvbox_warm_dark` | Warm retro dark |
-| `monokai_vivid` | Vivid Monokai contrast |
-| `rose_pine_moon` | Rosé Pine dark variant |
-| `pads_dark_navy` | PADS-inspired dark navy |
-| `pads_soft_twilight` | PADS-inspired soft twilight |
-| `cadence_soft_ember` | Cadence-inspired warm ember |
-| `cadence_steel_noir` | Cadence-inspired steel noir |
-| `cosmo_deep_jade` | Deep jade green |
-| `cosmo_gold` | Rich gold contrast |
-| `cosmo_soft_gold` | Soft gold muted |
-| `eagle_soft_amber` | Eagle-inspired soft amber |
-| `fusion_slate_amber` | Fusion 360-inspired slate amber |
+| Theme                  | Style                                 |
+| ---------------------- | ------------------------------------- |
+| `IBrahim's_Theme`      | Custom dark — author's personal theme |
+| `tokyo_night`          | Dark blue-purple, high contrast       |
+| `altium_midnight_blue` | Altium-inspired deep blue             |
+| `altium_soft_slate`    | Altium-inspired muted slate           |
+| `nord_arctic`          | Nord palette, cool gray-blue          |
+| `gruvbox_warm_dark`    | Warm retro dark                       |
+| `monokai_vivid`        | Vivid Monokai contrast                |
+| `rose_pine_moon`       | Rosé Pine dark variant                |
+| `pads_dark_navy`       | PADS-inspired dark navy               |
+| `pads_soft_twilight`   | PADS-inspired soft twilight           |
+| `cadence_soft_ember`   | Cadence-inspired warm ember           |
+| `cadence_steel_noir`   | Cadence-inspired steel noir           |
+| `cosmo_deep_jade`      | Deep jade green                       |
+| `cosmo_gold`           | Rich gold contrast                    |
+| `cosmo_soft_gold`      | Soft gold muted                       |
+| `eagle_soft_amber`     | Eagle-inspired soft amber             |
+| `fusion_slate_amber`   | Fusion 360-inspired slate amber       |
 
 ### How to apply a color theme inside KiCad
 
 **Schematic Editor (Eeschema):**
+
 ```
 
 Preferences → Preferences → Schematic Editor → Colors → Load Theme
 
 ```
+
 Select any `.json` file from the `colors/` folder.
 
 **PCB Editor (PCBnew):**
+
 ```
 
 Preferences → Preferences → PCB Editor → Colors → Load Theme
 
-````
+```
+
 Select any `.json` file from the `colors/` folder.
 
 **Or copy themes system-wide:**
+
 ```bash
 cp colors/*.json ~/.config/kicad/10.0/colors/
-````
+```
 
 Themes will then appear in the KiCad color theme dropdown automatically.
 
@@ -245,8 +251,3 @@ MIT — free to use, modify, and distribute.
 
 Ibrahim — Mechatronics Engineer, KiCad PCB Designer
 Arch Linux + Hyprland + HyDE
-EOF
-
-```
-
-```
