@@ -21,19 +21,19 @@ mkdir -p "$BIN_DIR" "$APP_DIR" "$GTK_DIR"
 # ── 2. Install wrappers ──
 echo "[1/3] Installing wrappers to $BIN_DIR ..."
 for wrapper in "$REPO_DIR"/wrappers/*; do
-    name="$(basename "$wrapper")"
-    cp "$wrapper" "$BIN_DIR/$name"
-    chmod +x "$BIN_DIR/$name"
-    echo "      ✔ $name"
+	name="$(basename "$wrapper")"
+	cp "$wrapper" "$BIN_DIR/$name"
+	chmod +x "$BIN_DIR/$name"
+	echo "      ✔ $name"
 done
 
 # ── 3. Install desktop entries ──
 echo "[2/3] Installing desktop entries to $APP_DIR ..."
 for desktop in "$REPO_DIR"/desktop/*.desktop; do
-    name="$(basename "$desktop")"
-    # Replace $HOME placeholder with actual home path
-    sed "s|\$HOME|$HOME|g" "$desktop" > "$APP_DIR/$name"
-    echo "      ✔ $name"
+	name="$(basename "$desktop")"
+	# Replace $HOME placeholder with actual home path
+	sed "s|\$HOME|$HOME|g" "$desktop" >"$APP_DIR/$name"
+	echo "      ✔ $name"
 done
 
 # Update desktop database
@@ -42,8 +42,8 @@ update-desktop-database "$APP_DIR" 2>/dev/null || true
 # ── 4. Install GTK CSS ──
 echo "[3/3] Installing GTK CSS to $GTK_DIR/gtk.css ..."
 if [ -f "$GTK_DIR/gtk.css" ]; then
-    cp "$GTK_DIR/gtk.css" "$GTK_DIR/gtk.css.bak"
-    echo "      ℹ  Existing gtk.css backed up to gtk.css.bak"
+	cp "$GTK_DIR/gtk.css" "$GTK_DIR/gtk.css.bak"
+	echo "      ℹ  Existing gtk.css backed up to gtk.css.bak"
 fi
 cp "$REPO_DIR/gtk/gtk.css" "$GTK_DIR/gtk.css"
 echo "      ✔ gtk.css"
@@ -53,4 +53,9 @@ echo "==> Installation complete."
 echo "    Launch KiCad from your application menu or run: kicad-dark"
 echo ""
 echo "    NOTE: If you use a Wayland compositor other than Hyprland,"
+# ── 5. Install color themes ──
+echo "[4/4] Installing color themes to ~/.config/kicad/10.0/colors/ ..."
+mkdir -p "$HOME/.config/kicad/10.0/colors/"
+cp "$REPO_DIR"/colors/*.json "$HOME/.config/kicad/10.0/colors/"
+echo "      ✔ 16 themes installed"
 echo "    you may need to adjust GDK_BACKEND in the wrappers."
