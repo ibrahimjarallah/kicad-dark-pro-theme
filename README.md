@@ -249,6 +249,6 @@ MIT — free to use, modify, and distribute.
 
 ## Author
 
-Ibrahim — Mechatronics Engineer, Harware Designer and IT Specialist \
+Ibrahim — Mechatronics Engineer, Harware Designer and IT Specialist
 
 Arch Linux + Hyprland + HyDE
