@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Icon=kicad
+Type=Application
+Categories=Science;Electronics;
+Exec=$HOME/.local/bin/kicad-dark %f
+StartupWMClass=kicad
+Keywords=Projectmanager;
+MimeType=application/x-kicad-project;
+Name=KiCad
+GenericName=EDA Suite
+Comment=Suite of tools for schematic design and circuit board layout

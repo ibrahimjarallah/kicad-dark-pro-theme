@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Icon=pcbcalculator
+Type=Application
+Categories=Science;Electronics;
+Exec=$HOME/.local/bin/pcb_calculator-dark
+StartupWMClass=pcb_calculator
+Name=KiCad PCB Calculator
+GenericName=PCB Calculator
+Comment=Calculator for various electronics-related computations
+Keywords=PCB;Calculator;
+X-AppStream-Ignore=true

@@ -1,0 +1,253 @@
+/* ============================================================
+   KiCad Dark Pro Theme — GTK3 CSS
+   https://github.com/ibrahimxxxxxxx/kicad-dark-pro-theme
+   Tested on: KiCad 10.0.1-2, Arch Linux, Hyprland, Wayland
+   ============================================================ */
+
+/* ── virt-viewer passthrough (do not remove) ── */
+virt-viewer * {
+    -GtkWidget-show-menubar: 0;
+    -GtkToolbar-style: GTK_TOOLBAR_ICONS;
+}
+
+/* ── Entries / Spinbuttons ── */
+entry,
+spinbutton,
+spinbutton text {
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
+    padding: 1px 4px;
+    min-height: 0px;
+}
+
+entry *,
+.entry {
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
+}
+
+/* ── Combobox — shrink button, keep content untouched ── */
+combobox {
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
+    min-height: 0px;
+    padding: 0px;
+}
+
+combobox button {
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
+    padding: 0px 2px;
+    min-height: 0px;
+}
+
+combobox button * {
+    border-radius: 0px;
+    min-height: 0px;
+    padding: 0px;
+    -gtk-icon-size: 12px;
+}
+
+combobox window.popup,
+combobox window.popup treeview,
+combobox window.popup treeview row {
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
+    padding: 1px 4px;
+    min-height: 0px;
+}
+
+combobox window.popup scrolledwindow {
+    min-height: 0px;
+    max-height: 300px;
+}
+
+/* ── Buttons ── */
+button,
+.button {
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
+    padding: 0px 2px;
+    min-height: 0px;
+    min-width: 0px;
+}
+
+button label {
+    padding: 0px;
+    min-height: 0px;
+}
+
+/* ── Steppers / spinner buttons ── */
+spinbutton button {
+    border-radius: 0px;
+    padding: 0px 2px;
+    min-height: 0px;
+    min-width: 12px;
+}
+
+/* ── Checkboxes ── */
+checkbutton {
+    border-radius: 0px;
+    padding: 1px 2px;
+    min-height: 0px;
+    min-width: 0px;
+}
+
+check {
+    border-radius: 0px;
+    min-height: 12px;
+    min-width: 12px;
+    -gtk-icon-size: 12px;
+}
+
+/* ── Radio buttons ── */
+radiobutton {
+    border-radius: 0px;
+    padding: 1px 2px;
+    min-height: 0px;
+    min-width: 0px;
+}
+
+radio {
+    border-radius: 0px;
+    min-height: 12px;
+    min-width: 12px;
+    -gtk-icon-size: 12px;
+}
+
+/* ── Scrollbars ── */
+scrollbar {
+    border-radius: 0px;
+    min-width: 4px;
+    min-height: 4px;
+}
+
+scrollbar slider {
+    border-radius: 0px;
+    min-width: 4px;
+    min-height: 4px;
+}
+
+scrollbar trough {
+    border-radius: 0px;
+}
+
+scrollbar button {
+    min-width: 0px;
+    min-height: 0px;
+    padding: 0px;
+}
+
+/* ── Treeview / Lists ── */
+treeview row {
+    min-height: 0px;
+    padding: 1px 2px;
+}
+
+treeview header button {
+    border-radius: 0px;
+    padding: 1px 4px;
+    min-height: 0px;
+}
+
+/* ── Notebook tabs ── */
+notebook tab {
+    border-radius: 0px;
+    padding: 1px 4px;
+    min-height: 0px;
+}
+
+/* ── Menubar — untouched ── */
+menubar {
+    padding: 0px;
+    min-height: 0px;
+}
+
+menubar > menuitem {
+    border-radius: 0px;
+    padding: 2px 6px;
+    min-height: 0px;
+}
+
+menuitem {
+    border-radius: 0px;
+    padding: 2px 6px;
+    min-height: 0px;
+}
+
+menu {
+    border-radius: 0px;
+    padding: 0px;
+}
+
+/* ── Toolbar ── */
+toolbar {
+    padding: 0px;
+    -GtkToolbar-button-relief: none;
+}
+
+toolbar button {
+    border-radius: 0px;
+    padding: 1px;
+    min-height: 0px;
+    min-width: 0px;
+}
+
+toolbar image,
+toolbar button image {
+    -gtk-icon-size: 10px;
+}
+
+image {
+    -gtk-icon-size: 10px;
+}
+
+/* ── Sliders ── */
+scale {
+    padding: 0px 2px;
+    min-height: 0px;
+}
+
+scale trough {
+    min-height: 3px;
+    min-width: 3px;
+    border-radius: 0px;
+}
+
+scale slider {
+    min-height: 10px;
+    min-width: 10px;
+    border-radius: 0px;
+}
+
+scale value {
+    padding: 0px 2px;
+}
+
+/* ── Statusbar ── */
+statusbar {
+    padding: 0px 2px;
+    min-height: 0px;
+    font-size: 0.8em;
+}
+
+/* ── Frames / Separators ── */
+frame border {
+    border-radius: 0px;
+}
+
+separator {
+    min-height: 1px;
+    min-width: 1px;
+}
+
+/* ── Popovers / Tooltips ── */
+popover {
+    border-radius: 0px;
+    padding: 1px;
+}
+
+tooltip {
+    border-radius: 0px;
+    padding: 1px 3px;
+}

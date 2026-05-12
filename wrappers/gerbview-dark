@@ -1,0 +1,6 @@
+#!/bin/bash
+export GTK_THEME=Adwaita:dark
+export GTK_APPLICATION_PREFER_DARK_THEME=1
+export GDK_BACKEND=wayland
+export GDK_DPI_SCALE=0.85
+exec gerbview "$@"
