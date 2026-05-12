@@ -1,5 +1,4 @@
 ```bash
-cat > ~/workspaces/contributions/kicad_contributions/kicad-dark-pro-theme/README.md << 'EOF'
 # KiCad Dark Pro Theme
 
 A professional dark gray compact UI theme for KiCad 10 on Linux — cleaner and more compact than Altium Designer's default layout. Includes 16 handcrafted schematic and PCB color themes.
